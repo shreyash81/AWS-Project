@@ -1,6 +1,7 @@
 # AWS-Project-Cost-Optimization
 
-#Identifying Stale EBS Snapshots
+__Identifying Stale EBS Snapshots__
+
 In this example, we'll create a Lambda function that identifies EBS snapshots that are no longer associated with any active EC2 instance and deletes them to save on storage costs.
 
 EXPLANATIONS:
@@ -14,7 +15,7 @@ EXPLANATIONS:
 4:Deleting Stale Snapshots: If the volume is not attached to any active instance or if the volume does not exist, the function deletes the snapsho
 
 
-#Identifying Stale EBS Snapshots and Volumes
+__Identifying Stale EBS Snapshots and Volumes__
 
 In the case of if EBS snapshots is associated with volume and that volume is not attached to any running instance then delete the volume as well them to save on storage costs.
 
@@ -26,7 +27,7 @@ EXPLANATIOS:
 
 3:Exception Handling: If the volume is not found (it might have been deleted already), the snapshot is deleted.
 
-#Identifying Stale EBS Snapshots and Volumes and Running Instances
+__Identifying Stale EBS Snapshots and Volumes and Running Instances__
 
 OR In the case of if ebs snapshot is associated with volume and that volume is attached to any active instance then firstly delete the running instance after that delete the volume and snapshots.
 
